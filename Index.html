@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <style>
+        main {
+            margin-top: 40px;
+            background-color: blue;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p> Crie e visualize sua lista de compras de forma tranquila e rápida! Adiciona e remova itens de forma simples
+            e rápida</p>
+    </header>
+    <main>
+        <form>
+            <input id="item" type="text" placeholder="Informe o item que deseja adicionar à lista">
+            <label> Categoria desse produto</label>
+            <select id="tipo" name="categoria">
+                <option id="milk"> laticínios</option>
+                <option id="clean"> limpeza</option>
+                <option id="meat"> carnes</option>
+                <option id="bread"> pães</option>
+                <option id="fruit"> frutas</option>
+                <option id="drinks">bebidas</option>
+                <option id="other"> outro</option>
+            </select>
+            <button id="additem" type="button"> Adicionar</button>
+        </form>
+
+        <h2> Lista de compras</h2>
+        <ul id="listacompras">
+            
+        </ul>
+    </main>
+    <footer>
+        &copy; 2025. Produzido por Luiz Felipe Basso.
+        <p> Todos os direitos reservados</p>
+    </footer>
+
+</body>
+<script src="Script.js"></script>
+</html>
