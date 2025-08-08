@@ -7,8 +7,12 @@
     <title>Lista de compras</title>
     <style>
         main {
-            margin-top: 40px;
-            background-color: blue;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        form {
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -22,8 +26,10 @@
             e rápida</p>
     </header>
     <main>
-        <form>
-            <input id="item" type="text" placeholder="Informe o item que deseja adicionar à lista">
+        <form name="Adicionar produto">
+            <p> Adicionar produto</p>
+            <label>Nome do produto</label>
+            <input id="item" type="text" placeholder="Informe o produto que deseja adicionar à lista">
             <label> Categoria desse produto</label>
             <select id="tipo" name="categoria">
                 <option id="milk"> laticínios</option>
@@ -34,6 +40,8 @@
                 <option id="drinks">bebidas</option>
                 <option id="other"> outro</option>
             </select>
+            <label>Quantidade, ex: duas caixas de leite</label>
+            <input id="quantity" name="quantidadeProduto" placeholder="informe a quantidade desse produto">
             <button id="additem" type="button"> Adicionar</button>
         </form>
 
