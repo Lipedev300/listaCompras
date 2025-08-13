@@ -5,19 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de compras</title>
-    <style>
-        main {
-            text-align: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-        }
-        form {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,6 +30,8 @@
             </select>
             <label>Quantidade, ex: duas caixas de leite</label>
             <input id="quantity" name="quantidadeProduto" placeholder="informe a quantidade desse produto">
+            <label> Unidade/peso do produto, ex: 2 quilos, 3 litros a embalagem, etc</label>
+            <input id="unity" type="text" name="unidade" placeholder="Informe a uunidade do produto">
             <button id="additem" type="button"> Adicionar</button>
         </form>
 
